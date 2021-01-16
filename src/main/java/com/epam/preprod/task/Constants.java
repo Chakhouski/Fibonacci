@@ -15,6 +15,7 @@ public class Constants {
     public static final int MAX_POLL_RECORDS = 1;
     public static final String AUTO_COMMIT_CONFIG = "false";
     public static final String GROUP_ID_CONFIG = "consumerGroup1";
+    public static final String CONSUMER_OFFSET_POSITION = "earliest";
 
     // Other constants
     public static final int ARG_FIRST_N_FIBONACCI_NUMBERS = 0;

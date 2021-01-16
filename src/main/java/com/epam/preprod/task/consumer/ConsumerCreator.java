@@ -23,6 +23,7 @@ public class ConsumerCreator {
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class.getName());
         props.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, MAX_POLL_RECORDS);
         props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, AUTO_COMMIT_CONFIG);
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, CONSUMER_OFFSET_POSITION);
 
         Consumer<Long, Long> consumer = new KafkaConsumer<>(props);
         consumer.subscribe(Collections.singletonList(TOPIC_NAME));
